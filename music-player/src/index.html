@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="description" content="this is a test page">
+    <meta name="keywords" content="test,canvas,css3">
+
+</head>
+<link href="vendor/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<body>
+<div class="bg" style="background-image: url('./resource/images/demo.jpg');">
+    <div class="bg-cover"></div>
+</div>
+<div class="audio-player">
+    <div class="title">
+        <p class="music-name">You Don't Know Me (feat. Brodie Barclay)</p>
+        <p class="music-remark">Ofenbach/Brodie Barclay</p>
+    </div>
+    <div class="disk-switcher">
+
+    </div>
+    <div class="disk-container">
+        <div class="disk" style="background-image: url('./resource/images/demo.jpg')"></div>
+    </div>
+    <audio class="player"></audio>
+    <footer>
+        <div class="my-player-progress">
+            <span class="fl">03:00</span>
+            <span class="fr">03:13</span>
+            <div id="progress" class="my-progress">
+                <div class="total-progress"></div>
+                <div class="current-progress"><span class="time-btn icon-btn"></span></div>
+            </div>
+        </div>
+        <div class="player-bar">
+            <span class="icon-btn loop-btn fl"></span>
+            <span class="icon-btn list-btn fr"></span>
+            <div class="play-btn">
+                <span class="icon-btn btn-pre fl"></span>
+                <span class="icon-btn btn-next fr"></span>
+                <span class="icon-btn btn-middle btn-middle-paused"></span>
+            </div>
+
+        </div>
+    </footer>
+    <div id="playlist" class="play-list">
+        <ul class="list-group ">
+
+        </ul>
+    </div>
+
+</div>
+<script type="text/javascript" src="vendor/jquery.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    $("body").musicPlayer();
+</script>
+</body>
+</html>

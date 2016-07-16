@@ -1,0 +1,256 @@
+
+.bg {
+  background: grey center;
+  background-size: cover;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.bg-cover {
+  background: rgba(0, 0, 0, .4);
+  width: 100%;
+  height: 100%;
+}
+
+.audio-player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.title {
+  width: 100%;
+  height: 63px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-family: "Microsoft YaHei";
+}
+
+.music-name {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.music-remark {
+  font-size: 14px;
+  color: white;
+}
+
+.disk-switcher {
+  width: 84px;
+  height: 127px;
+  background-image: url("../resource/images/play_needle.png");
+  background-size: 84px;
+  margin: auto;
+  transform-origin: 16px 16px;
+  transform: rotate(-30deg);
+  transition: transform 2s;
+  position: relative;
+  left: 35px;
+  z-index: 1;
+}
+
+.disk-switcher-play{
+  transform: rotate(0deg);
+}
+
+.disk-container {
+  background-image: url("../resource/images/play_disc.png");
+  margin: auto;
+  background-size: 250px 250px;
+  position: relative;
+  top: -55px;
+  width: 250px;
+  height: 250px;
+  z-index: 0;
+}
+
+@keyframes rotate-disk {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.disk {
+  width: 162px;
+  height: 162px;
+  margin: 44px;
+  background-size: 162px 162px;
+  border-radius: 81px;
+  position: absolute;
+
+}
+
+.disk-play{
+  animation: rotate-disk 6s linear;
+  animation-iteration-count: infinite;
+}
+
+
+
+
+
+footer {
+  bottom: -40px;
+  position: relative;
+  height: auto;
+}
+
+.my-player-progress {
+  margin: auto;
+  width: 320px;
+  height: 20px;
+  color: white;
+  font-size: 16px;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.my-progress {
+  margin: auto;
+  width: 240px;
+  height: 20px;
+  position: relative;
+  top: -10px;
+
+}
+
+.total-progress {
+  width: 100%;
+  height: 20px;
+  border-bottom: white solid 3px;
+  position: relative;
+  bottom: -3px;
+}
+
+.current-progress {
+  height: 20px;
+  border-bottom: red solid 3px;
+  position: relative;
+  bottom: 17px;
+}
+
+.time-btn {
+  width: 20px;
+  height: 20px;
+  background-image: url("../resource/images/process_btn.png");
+  background-position: -3px -3px;
+  position: relative;
+
+  left: 100%;
+  bottom: -8px;
+  background-size: 26px 26px;
+}
+
+.icon-btn {
+  display: inline-block;
+}
+
+.player-bar {
+  margin-top: 30px;
+  width: 320px;
+  height: 88px;
+  margin: auto;
+  clear: both;
+}
+
+.player-bar span{
+  cursor: pointer;
+}
+.loop-btn {
+  width: 36px;
+  height: 36px;
+  background-image: url("../resource/images/play_icn_loop.png");
+  background-size: 36px 36px;
+  margin: 26px 8px 26px 8px;
+}
+
+
+.list-btn {
+  width: 36px;
+  height: 36px;
+  background-image: url("../resource/images/play_icn_src.png");
+  background-size: 36px 36px;
+  margin: 26px 8px 26px 8px;
+}
+
+.play-btn {
+  margin: auto;
+  width: 240px;
+  height: 88px;
+
+}
+
+.play-btn .btn-pre {
+  background-image: url("../resource/images/play_btn_prev.png");
+  background-size: 45px 45px;
+  width: 45px;
+  height: 45px;
+  margin: 21px 8px 21px 8px;
+}
+
+.play-btn .btn-next {
+  background-image: url("../resource/images/play_btn_next.png");
+  background-size: 45px 45px;
+  width: 45px;
+  height: 45px;
+  margin: 21px 8px 21px 8px;
+}
+
+.play-btn .btn-middle {
+  background-size: 62px 62px;
+  width: 62px;
+  height: 62px;
+  margin: 13px 13px 13px 13px;
+}
+.btn-middle-paused{
+  background-image: url('../resource/images/play_rdi_btn_play.png');
+}
+.btn-middle-played{
+  background-image: url('../resource/images/play_rdi_btn_pause.png');
+}
+
+.play-list{
+  width: 250px;
+  position: absolute;
+  right: 0px;
+  top: 30%;
+
+}
+.play-list ul{
+  color:white;
+  max-height: 247px;
+  position: relative;
+  left: 250px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transition: transform 2s;
+}
+.play-list-show{
+  -webkit-transform:translate(-250px,0);
+  transform: translate(-250px,0);
+}
+
+.play-list ul li{
+  background: rgba(0,0,0,.2);
+}
+
+.play-list ul li:hover{
+  cursor: pointer;
+  color: rgba(105,144,25,.7);
+}
+
+
+
+
