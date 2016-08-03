@@ -34,9 +34,8 @@
 		init: function () {
 			var self = this;
 			$.ajax({
-				url: "http://localhost:3000/getMusicInfo.do",
+				url: "http://localhost:3500/getMusicInfo.do",
 				type: 'get',
-				responseType: 'JSON',
 				success: function (response) {
 					playList=JSON.parse(response).result.tracks;
 					self.initData(playList);
